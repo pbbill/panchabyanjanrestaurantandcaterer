@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panchabyanjan Restaurant and Caterer</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: sans-serif; background: #fff4e6; color: #333; }
+
+    header { background: #ff6600; color: white; padding: 20px; text-align: center; }
+    nav { display: flex; justify-content: center; background: #ffa366; padding: 10px 0; flex-wrap: wrap; }
+    nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; padding: 5px 10px; }
+    nav a:hover { text-decoration: underline; }
+
+    .carousel {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+.carousel img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fade 18s infinite;
+}
+.carousel img:nth-child(1) { animation-delay: 0s; }
+.carousel img:nth-child(2) { animation-delay: 6s; }
+.carousel img:nth-child(3) { animation-delay: 12s; }
+.carousel img:nth-child(4) { animation-delay: 18s; }
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  5%   { opacity: 1; }
+  30%  { opacity: 1; }
+  35%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+    .section { padding: 20px; max-width: 1000px; margin: auto; }
+    .section h2 { color: #ff6600; }
+    .about-service { display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; }
+    .about, .services {
+      flex: 1; min-width: 280px;
+      background: #fff3e0; padding: 15px; border-radius: 8px;
+    }
+
+    .service-box { margin-bottom: 15px; }
+    .service-box h3 { margin: 0; color: #e65c00; }
+    .button {
+      display: inline-block;
+      background: #ff6600; color: white; padding: 8px 14px;
+      text-decoration: none; border-radius: 5px; margin-top: 10px;
+    }
+    .button:hover { background: #e65c00; }
+
+    .footer {
+      background: #333; color: #fff; text-align: center;
+      padding: 15px; font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-inner img { height: 200px; }
+    }
+    @media (max-width: 500px) {
+      header h1 { font-size: 1.4em; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="C:\Users\praloy.paul\Downloads\Index with sample menu\ChatGPT_Image_Jun_23__2025__11_53_11_AM-removebg-preview.png" alt="Panchabyanjan Logo" style="height: 200px; margin-bottom: 10px;">
+    <h1>Panchabyanjan Restaurant and Caterer</h1>
+    <p>Multicuisine Restaurant • Home Delivery • Catering Services</p>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Our Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <div class="carousel">
+      <div class="carousel-inner">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiGWXEGnT04Em5VqcFFZN9Gk67Nh7dLtmv2w&s" alt="Banner 1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHDW59wuJryth-yMCxnSffyWf9EkGt9JrArA&s" alt="Banner 2">      
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLEbhUTysszwOolGXoFYeWc1QVKQhDOHcexA&s" alt="Banner 3">
+<img src="https://assets.gqindia.com/photos/64df605c5bc04358130bedb8/16:9/w_2560%2Cc_limit/004%2520(7).jpg" alt="Banner 4">
+      </div>
+    </div>
+  </section>
+
+  <section class="section about-service">
+    <div class="about" id="about">
+      <h2>About Us</h2>
+      <p>
+        Panchabyanjan Restaurant and Caterer is a proudly homegrown culinary venture based in Kolkata, founded by a team of seasoned hospitality professionals with over 12 years of experience in top-tier hotels and the food service industry.
+With a passion for delivering authentic food and impeccable service, Panchabyanjan was established with a clear vision: to bring the standards of fine hospitality into everyday dining and catering experiences. From homestyle meals to elaborate event menus, every dish is crafted with care, expertise, and the essence of tradition.
+With a strong foundation in hotel operations, food production, and guest service, the promoters of Panchabyanjan ensure every meal and event reflects professionalism, consistency, and the warmth of Bengali hospitality.
+We are committed to making every order special — whether it's a thali for one or a feast for hundreds.
+      </p>
+    </div>
+
+    <div class="services" id="services">
+      <h2>Our Services</h2>
+      <div class="service-box">
+        <h3>🏠 Home Delivery</h3>
+        <p>Craving authentic food without leaving home? Panchabyanjan delivers delicious meals that feel homemade but taste like five-star dining. Whether it’s a daily lunch, family dinner, or surprise treat, our delivery service ensures freshness, punctuality, and satisfaction with every order.</p>
+        <a href="White Black Simple Restaurant Menu (9)_page-0001.jpg" class="button" target="_blank">Explore Our Menus</a>
+      </div>
+      <div class="service-box">
+        <h3>🎉 Catering Service</h3>
+        <p>Hosting a party or event? Let Panchabyanjan take care of the food. We offer customized catering for every occasion—whether it’s a wedding, birthday, office lunch, or cultural event. Our chefs bring rich flavors and traditional recipes to life, while our trained staff ensures flawless service from start to finish.
+</p>
+        <a href="#" class="button">View Sample Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Phone: <a href="tel:6290300741">6290300741</a></p>
+    <p>📧 Email: <a href="mailto:panchabyanrestaurant@gmail.com">panchabyanrestaurant@gmail.com</a></p>
+    <p>📍 Address: 86 Tarafdarpara Rd, Kolkata, 700151</p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Panchabyanjan Restaurant and Caterer. All rights reserved.</p>
+  </footer>
+</body>
+</html>
