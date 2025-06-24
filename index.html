@@ -5,7 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Panchabyanjan Restaurant and Caterer</title>
   <style>
-    * { box-sizing: border-box; }
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.whatsapp-float img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1); /* White logo */
+}
+
+.whatsapp-float:hover {
+  background-color: #128C7E;
+}    * { box-sizing: border-box; }
     body { margin: 0; font-family: sans-serif; background: #fff4e6; color: #333; }
 
     header { background: #ff6600; color: white; padding: 20px; text-align: center; }
@@ -71,8 +95,14 @@
   </style>
 </head>
 <body>
-  <header>
-    <img src="https://raw.githubusercontent.com/pbbill/panchabyanjanrestaurantandcaterer/main/logo.png" alt="Panchabyanjan Logo" style="height: 150px; margin-bottom: 10px;">
+<a href="https://wa.me/916290300741" 
+   class="whatsapp-float" 
+   target="_blank" 
+   title="Chat with us on WhatsApp">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" 
+       alt="WhatsApp" />
+</a>  <header>
+    <img src="logo.png" alt="Panchabyanjan Logo" style="height: 150px; margin-bottom: 10px;">
     <h1>Panchabyanjan Restaurant and Caterer</h1>
     <p>Multicuisine Restaurant • Home Delivery • Catering Services</p>
   </header>
